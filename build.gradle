@@ -1,0 +1,63 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        google()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.3.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'com.google.gms:google-services:4.3.5'
+        classpath 'com.tencent.vasdolly:plugin:3.0.6'
+
+        // Add the Crashlytics Gradle plugin
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.7.1'
+        classpath('org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.23')
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        google()
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+ext {
+    projectName = 'DroidWiz'
+    appFolder = "app/"
+
+    minSdkVersion = 21
+    targetSdkVersion = 34
+    compileSdkVersion = 34
+
+    versionCode = Integer.valueOf(project.versionCode)
+    versionName = project.versionName
+}
+
+boolean enableNetworkCapture() {
+    if (Boolean.valueOf(project.findProperty("online"))) {
+        return false
+    }
+    if (project.findProperty("enableNetworkCapture") == null) {
+        return true
+    }
+    return Boolean.valueOf(project.findProperty("enableNetworkCapture"))
+}

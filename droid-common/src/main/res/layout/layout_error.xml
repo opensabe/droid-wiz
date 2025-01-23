@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_icon"
+        android:layout_width="140dp"
+        android:layout_height="110dp"
+        android:background="@drawable/common_net_error" />
+
+    <TextView
+        android:id="@+id/tv_error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/common_error_net_title"
+        android:textColor="@color/color2A3D66"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:maxWidth="260dp"
+        android:text="@string/common_error_net_text"
+        android:textColor="@color/color2A3D66"
+        android:textSize="12sp" />
+
+    <com.droid.wiz.toolkits.widget.selector.MTextView
+        android:id="@+id/viewRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:paddingHorizontal="50dp"
+        android:text="@string/retry"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:sCornerRadius="22dp"
+        app:sNormalColor="@color/color2A53C5"
+        app:sRippleColor="@color/color5375D4" />
+
+</LinearLayout>

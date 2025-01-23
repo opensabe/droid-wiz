@@ -1,0 +1,105 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    namespace = "com.droid.wiz.toolkits"
+    compileSdk rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdk rootProject.ext.minSdkVersion
+        targetSdk rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        if (project.findProperty("online") != null) {
+            println("online:" + project.findProperty("online").toString())
+            buildConfigField "Boolean", "online", project.findProperty("online")
+        } else {
+            buildConfigField "Boolean", "online", "${manualOnline}"
+        }
+    }
+
+    buildTypes {
+        release {
+            buildConfigField("String", "versionName", "\"${versionName}\"")
+            buildConfigField "Integer", "versionCode", "${versionCode}"
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            buildConfigField("String", "versionName", "\"${versionName}\"")
+            buildConfigField "Integer", "versionCode", "${versionCode}"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+}
+
+dependencies {
+
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.constraintlayout
+    implementation libs.androidx.lifecycle.process
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+
+    api libs.glide
+    api libs.glide.transformations
+    api(libs.okhttp)
+    api libs.gson
+    api libs.toastcompat
+    //api 'com.meituan.robust:robust:0.4.99'
+    //api libs.robust
+
+    api libs.helper
+    api libs.android.auto.size
+
+    if (project.enableNetworkCapture()) {
+        implementation 'com.github.liuxiao352:NetworkCaptureCore:v1.0.6'
+    }
+
+    api libs.androidx.core.ktx
+    api libs.androidx.activity.ktx
+    api libs.navigation.fragment.ktx
+    api libs.androidx.lifecycle.viewmodel.ktx
+    api libs.androidx.lifecycle.runtime.ktx
+    api libs.androidx.lifecycle.livedata.ktx
+    api libs.kotlinx.coroutines.core
+    api libs.kotlinx.coroutines.android
+    implementation(libs.retrofit)
+    api libs.converter.moshi
+    api libs.moshi.kotlin
+
+    // Import the Firebase BoM
+    api platform(libs.firebase.bom)
+    // Add the dependency for the Firebase SDK for Google Analytics
+    // When using the BoM, don't specify versions in Firebase dependencies
+    //noinspection UseTomlInstead
+    api 'com.google.firebase:firebase-analytics'
+    //noinspection UseTomlInstead
+    api 'com.google.firebase:firebase-crashlytics'
+    //noinspection UseTomlInstead
+    api 'com.google.firebase:firebase-messaging'
+
+    api libs.mmkv
+    api 'com.getkeepsafe.relinker:relinker:1.4.5'
+}

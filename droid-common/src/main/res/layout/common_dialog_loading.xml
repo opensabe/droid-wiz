@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.droid.wiz.toolkits.widget.selector.MLinearLayout
+        android:id="@+id/dialog_loading"
+        android:layout_width="wrap_content"
+        android:minWidth="120dp"
+        android:layout_height="113dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="21dp"
+        android:paddingTop="10dp"
+        android:paddingRight="21dp"
+        android:paddingBottom="10dp"
+        app:sCornerRadius="8dp"
+        app:sNormalColor="@color/toastBg">
+
+        <com.droid.wiz.toolkits.widget.CircularProgressView
+            android:id="@+id/circularProgressView"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/tipTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/loading"
+            android:maxWidth="150dp"
+            android:textColor="@color/colorEDF1F5"
+            android:textSize="14sp" />
+    </com.droid.wiz.toolkits.widget.selector.MLinearLayout>
+
+</LinearLayout>

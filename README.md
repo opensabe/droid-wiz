@@ -1,2 +1,1 @@
-# droid-wiz
-Android public toolkit
+# DroidWiz

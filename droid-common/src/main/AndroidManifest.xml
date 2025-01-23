@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.droid.wiz.toolkits">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--上传google play内测包时这个权限需要特殊说明，暂时注释-->
+    <!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+</manifest>

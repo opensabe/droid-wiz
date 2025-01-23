@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name" translatable="false">common</string>
+    <string name="common_error_data_title" translatable="false">Oops!</string>
+
+    <string name="net_error_tips">Please check your internet connection and try again.</string>
+    <string name="abnormal">Sorry, something went wrong. Please try again later.</string>
+    <string name="close">close</string>
+    <string name="loading">Loading…</string>
+    <string name="common_empty_title">No Data Available</string>
+    <string name="common_empty_text">There is no data.</string>
+    <string name="common_error_net_text">Please check your internet connection and try again.</string>
+    <string name="common_error_data_text">Something went wrong, please try again.</string>
+    <string name="common_error_net_title">No Internet Connection</string>
+    <string name="retry">Retry</string>
+    <string name="common_loading">Loading</string>
+
+    <string name="enjoying_app">Enjoying This App?</string>
+    <string name="not_really">Not Really</string>
+    <string name="review_question1">Would you mind giving us some feedback?</string>
+    <string name="review_question2">How about a rating on the Google Play, then?</string>
+    <string name="no_thanks">No, thanks</string>
+    <string name="ok_sure">OK, sure</string>
+    <string name="yes_love_it">Yes, love it!</string>
+
+    <string name="just_now">Just Now</string>
+    <string name="minutes_ago">%s minutes ago</string>
+    <string name="hours_ago">%s hours ago</string>
+    <string name="days_ago">%s days ago</string>
+    <string name="weeks_ago">%s weeks ago</string>
+    <string name="months_ago">%s months ago</string>
+
+    <string name="minute_ago">%s minute ago</string>
+    <string name="hour_ago">%s hour ago</string>
+    <string name="day_ago">%s day ago</string>
+    <string name="week_ago">%s week ago</string>
+    <string name="month_ago">%s month ago</string>
+
+</resources>

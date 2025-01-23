@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="color333">#333333</color>
+    <color name="color999">#999999</color>
+    <color name="colorDivider">#ECECEC</color>
+    <color name="colorF8">#F8F8F8</color>
+    <color name="transparent10">#1A000000</color>
+    <color name="transparent50">#80000000</color>
+    <color name="toastBg">#CC292C33</color>
+    <color name="colorAECCFF">#AECCFF</color>
+    <color name="colorEDF1F5">#EDF1F5</color>
+    <color name="color2A53C5">#2A53C5</color>
+    <color name="color5375D4">#5375D4</color>
+    <color name="color2B53C5">#2B53C5</color>
+    <color name="color2851C5">#2851c5</color>
+    <color name="color5938AC">#5938ac</color>
+    <color name="colorCE3D28">#ce3d28</color>
+    <color name="color80A2FF">#80A2FF</color>
+    <color name="color2A3D66">#2A3D66</color>
+</resources>

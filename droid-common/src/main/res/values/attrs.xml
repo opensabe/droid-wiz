@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="m_ratio" format="float" />
+    <declare-styleable name="RatioImageView">
+        <attr name="m_ratio" />
+    </declare-styleable>
+    <declare-styleable name="MImageView">
+        <attr name="m_ratio" />
+    </declare-styleable>
+
+    <declare-styleable name="MTabLayout">
+        <attr name="mIndicatorColor" format="color" />
+        <attr name="mIndicatorWidth" format="dimension" />
+        <attr name="mIndicatorHeight" format="dimension" />
+        <attr name="mIndicatorMargin" format="dimension" />
+        <attr name="mIndicatorCorner" format="dimension" />
+        <attr name="mIndicatorResId" format="reference" />
+    </declare-styleable>
+
+    <!--selector view-->
+    <attr name="sCornerRadius" format="dimension" />
+    <attr name="sCornerRadiusTL" format="dimension" />
+    <attr name="sCornerRadiusTR" format="dimension" />
+    <attr name="sCornerRadiusBL" format="dimension" />
+    <attr name="sCornerRadiusBR" format="dimension" />
+    <attr name="sNormalColor" format="color" />
+    <attr name="sSelectColor" format="color"/>
+    <attr name="sUnableColor" format="color" />
+    <attr name="sRippleColor" format="color" />
+    <attr name="sOutlineWidth" format="dimension" />
+    <attr name="sOutlineColor" format="color" />
+    <attr name="sGradientType">
+        <enum name="linear" value="0" />
+        <enum name="radial" value="1" />
+        <enum name="sweep" value="2" />
+    </attr>
+    <attr name="sGradientOrientation">
+        <enum name="t_b" value="0" />
+        <enum name="tr_bl" value="1" />
+        <enum name="r_l" value="2" />
+        <enum name="br_tl" value="3" />
+        <enum name="b_t" value="4" />
+        <enum name="bl_tr" value="5" />
+        <enum name="l_r" value="6" />
+        <enum name="tl_br" value="7" />
+    </attr>
+    <attr name="sGradientRadius" format="float" />
+    <attr name="sGradientCenterX" format="float" />
+    <attr name="sGradientCenterY" format="float" />
+    <attr name="sGradientStartColor" format="color" />
+    <attr name="sGradientCenterColor" format="color" />
+    <attr name="sGradientEndColor" format="color" />
+
+    <declare-styleable name="MLinearLayout">
+        <attr name="sCornerRadius" />
+        <attr name="sCornerRadiusTL" />
+        <attr name="sCornerRadiusTR" />
+        <attr name="sCornerRadiusBL" />
+        <attr name="sCornerRadiusBR" />
+        <attr name="sNormalColor" />
+        <attr name="sUnableColor" />
+        <attr name="sSelectColor"/>
+        <attr name="sRippleColor" />
+        <attr name="sOutlineWidth" />
+        <attr name="sOutlineColor" />
+        <attr name="sGradientType" />
+        <attr name="sGradientOrientation" />
+        <attr name="sGradientRadius" />
+        <attr name="sGradientCenterX" />
+        <attr name="sGradientCenterY" />
+        <attr name="sGradientStartColor" />
+        <attr name="sGradientCenterColor" />
+        <attr name="sGradientEndColor" />
+    </declare-styleable>
+
+    <declare-styleable name="MTextView">
+        <attr name="sCornerRadius" />
+        <attr name="sCornerRadiusTL" />
+        <attr name="sCornerRadiusTR" />
+        <attr name="sCornerRadiusBL" />
+        <attr name="sCornerRadiusBR" />
+        <attr name="sNormalColor" />
+        <attr name="sSelectColor"/>
+        <attr name="sUnableColor" />
+        <attr name="sRippleColor" />
+        <attr name="sOutlineWidth" />
+        <attr name="sOutlineColor" />
+        <attr name="sGradientType" />
+        <attr name="sGradientOrientation" />
+        <attr name="sGradientRadius" />
+        <attr name="sGradientCenterX" />
+        <attr name="sGradientCenterY" />
+        <attr name="sGradientStartColor" />
+        <attr name="sGradientCenterColor" />
+        <attr name="sGradientEndColor" />
+    </declare-styleable>
+
+    <declare-styleable name="MRelativeLayout">
+        <attr name="sCornerRadius" />
+        <attr name="sCornerRadiusTL" />
+        <attr name="sCornerRadiusTR" />
+        <attr name="sCornerRadiusBL" />
+        <attr name="sCornerRadiusBR" />
+        <attr name="sNormalColor" />
+        <attr name="sSelectColor"/>
+        <attr name="sUnableColor" />
+        <attr name="sRippleColor" />
+        <attr name="sOutlineWidth" />
+        <attr name="sOutlineColor" />
+        <attr name="sGradientType" />
+        <attr name="sGradientOrientation" />
+        <attr name="sGradientRadius" />
+        <attr name="sGradientCenterX" />
+        <attr name="sGradientCenterY" />
+        <attr name="sGradientStartColor" />
+        <attr name="sGradientCenterColor" />
+        <attr name="sGradientEndColor" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+
+    <declare-styleable name="RectTextView">
+        <attr name="diff_top_bottom" format="dimension" />
+        <attr name="fill_color" format="color" />
+    </declare-styleable>
+
+
+</resources>
